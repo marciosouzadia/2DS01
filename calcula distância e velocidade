@@ -1,0 +1,9 @@
+# Pede a distância e a velocidade
+distancia = float(input("Digite a distância a percorrer em quilômetros: "))
+velocidade = float(input("Digite a velocidade média em quilômetros por hora: "))
+
+#Calcula o tempo 
+tempo = distancia / velocidade
+
+# exibe o tempo
+print(f"O tempo da viagem será de {tempo:.2f} horas.")
