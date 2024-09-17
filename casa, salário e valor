@@ -1,0 +1,20 @@
+# obter entrada do usuário
+valor_casa = float(input("Digite o valor da casa: "))
+salario = float(input("Digite seu salário mensal: "))
+anos_pagar = int(input("Digite o número de anos para pagar: "))
+
+# calcular o múmero de meses para pagar
+meses_pagar = anos_pagar * 12 
+
+#  calcular a parcela mensal
+parcela_mensal = valor_casa / meses_pagar
+
+#calcular 30% de salário 
+max_parcela = salario * 0.3
+
+# verificar se a parcela mensal está dentro do limite
+if parcela_mensal < max_parcela:
+    print("Empréstimo aprovado!")
+    print(f"Parcela mensal: R$ {parcela_mensal:.2f}")
+else:
+    print("Empréstimo não aprovado. Parcelar mensal excede 30% do seu salário.")
