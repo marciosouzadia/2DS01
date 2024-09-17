@@ -1,0 +1,17 @@
+# pergunta ao usuário a quantidade de km percorrido
+km_percorridos=float(input("Digite a quantidade de km percorridos: "))
+
+# pergunta ao usuário a quantidade de dias que o carro foi alugado
+dias_alugados = int(input("Digite a quantidade de dias que o carro foi alugado:" ))
+
+#calcula o preço a pagar por dia
+preco_por_dia = dias_alugados * 60
+
+#calcula o preço a pagar por km 
+preco_por_km = km_percorridos * 0.15
+
+# calcule o preço total a pagar
+preco_total = preco_por_dia + preco_por_km
+
+#imprime o preço total a pagar 
+print("O preço total a pagar é: R$ {:.2f}".format(preco_total))
