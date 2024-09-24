@@ -1,0 +1,39 @@
+import random
+
+# Defina as palavras possíveis
+palavras = ["casa", "carro", "pessoa", "computador", "livro"]
+
+# Escolha uma palavra aleatória da lista
+palavra_secreta = random.choice(palavras)
+
+# Inicialize a palavra adivinha com underscores
+palavras_adivinhada = ["_"] * len(palavra_secreta)
+
+# Inicialize o número de tentativas
+tentativas = 0
+
+print("Bem-vindo ao jogo da forca!")
+print("Eu estou pensando em uma palavra com", len(palavra_secreta), "letras.")
+
+while True:
+    #imprime a palavra adivinhada atual
+    print(" ".join(palavras_adivinhada))
+     
+    #peça ao usuário para adivinhar uma letra
+    letra = input("Digite uma letra: ")
+
+    # Verifique se a letra está na palavra secreta
+    if letra in palavra_secreta:
+        # Substitua os underscores pela letra adivinhada 
+        for i, letra_secreta in enumerate(palavra_secreta):
+            if letra_secreta == letra:
+                palavras_adivinhada[i] = letra
+    else:
+        #increamente o número de tentativas
+        tentativas += 1
+        print("Erro! A letra não está na palavra secreta.")
+
+    # Verifique se o número de tentativas excedeu o limite
+    if tentativas > 6:
+        print("Você perdeu! A pqalavra secreta era", palavra_secreta)
+        break
