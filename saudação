@@ -1,0 +1,13 @@
+hora = int(input("digite a hora: "))
+
+if hora >= 18:
+    print("boa noite")
+
+elif hora >=12:
+    print("boia tarde")
+
+elif hora >= 5:
+    print("bom dia")
+
+else:
+    print("erro")
