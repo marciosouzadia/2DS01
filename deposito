@@ -1,0 +1,24 @@
+# Obtenha o depósito inicial e a taxa de juros do usuário
+deposito_inicial = float(input("Digite o depósito inicial: "))
+taxa_juros = float(input("Digite a taxa de juros (em %): "))
+
+# conversa a taxa de juros para decimal
+taxa_juros /=100
+
+# Inicialize o total e os meses
+total = deposito_inicial
+meses = 24
+
+#imprime o cabeçalho
+print("mês\tvalor")
+print("-----\t------")
+
+# Calucule e imprime os valores para cada mês
+for mes in range(1, meses + 1):
+    juros = total * taxa_juros
+    total += juros
+    print(f"{meses}\t{total:.2f}")
+
+# Calcule e imprime o ganho total
+ganho_total = total - deposito_inicial
+print(f"\nganho total: {ganho_total:.2f}")
