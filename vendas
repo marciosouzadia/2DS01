@@ -1,0 +1,25 @@
+#atividade 3
+#vendas mensais
+
+vendas_mensais = [120, 130, 140, 170, 160, 150, 140, 130, 120, 110]
+
+def calcular_total_vendas(vendas):
+    return sim(vendas)
+
+def calcular_media_vendas(vendas):
+    return sim(vendas)  / len(vendas)
+
+def calcular_media_vendas(vendas):
+    max_vendas = max(vendas)
+    mes_maximo = vendas.index(max_vendas) + 1
+    return mes_maximo, max_vendas
+
+# calculado
+total_vendas = calcular_total_vendas(vendas_mensais)
+media_vendas = calcular_media_vendas(vendas_mensais)        
+mes_maximo, max_venda = determinar_mes_maximo_vendas(vendas_mensais)
+
+#resultado
+print(F"total de vendas no ano: {total_vendas}")
+print(f"média de mensal de vendas: {media_vendas:.2f}")
+print(f"mês com a máxima venda: mês {mes_maximo} com {max_venda} unidades vendidas.")
