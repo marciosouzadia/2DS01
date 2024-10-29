@@ -1,0 +1,25 @@
+def criar_resposta_email(matriz_informacoes):
+    # Cria a parte inicial da resposta
+    resposta = "Olá,\n\nObrigado pelo seu e-mail. Aqui estão as informações que você solicitou:\n\n"
+    
+    # Adiciona as informações da matriz à resposta
+    for i, linha in enumerate(matriz_informacoes):
+        resposta += f"Linha {i + 1}: " + ", ".join(map(str, linha)) + "\n"
+    
+    # Finaliza a resposta
+    resposta += "\nSe precisar de mais alguma coisa, não hesite em perguntar.\n\nAtenciosamente,\n[Marcio]"
+    
+    return resposta
+
+# Exemplo de matriz com informações
+matriz_dados = [
+    [1, "Produto A", 10.0],
+    [2, "Produto B", 20.0],
+    [3, "Produto C", 30.0]
+]
+
+# Criando a resposta
+resposta_email = criar_resposta_email(matriz_dados)
+
+# Exibindo a resposta
+print(resposta_email)
