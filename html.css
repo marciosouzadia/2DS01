@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Apresentacao</title>
+    <link rel="stylesheet" href="Marcio.css">
+</head>
+<body>
+    <h1>Marcio</h1> 
+    <h2>Sobre mim</h2>
+    <p>Me chamo Marcio Souza Dias! sou uma pessoa  que me sinto muito esforçado,determinado, persistente e intencionado. já pensei em varios coisas na vida e com medo de dar errado mas, mesmo assim tentando por ser de mim tentar. Todavia, esporte sempre pensei por ser uma opçâo que desde a adolecência costumei a fazer peneira e chegando há disputar troféu pelo time do bairro, ficando com essas escolhas para minha vida fazendo disso meu plano A. Na escola foi ter uma oportunidade de fazer curso e nâo dando certo no futebol pela minha idade entei no curso de TI dentro da escola mesmo. Sendo uma coisa nova na vida e aproveitando esse incentivo que sugeriu nâo deixando de lado abracei e hoje estudo para meu projeto de vida támbem pra vida a fora. Desenvolvimento de sistena nâo é facil, dentro dela tem topicos  brangente e extenso de areas do serviço em que estou estudando de forma complexa, prática, explicativa, fisíca e mental </p>
+    <h3>contatos</h3>
+</body>
+</html>
+body{
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+h1{
+    background-color: rgb(253, 0, 0);
+    color: rgb(0, 0, 0);
+}
+h2{
+    font: 1em sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-weight: bold
+}
